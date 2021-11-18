@@ -4,6 +4,7 @@
     font-family: Poppins, sans-serif;
     margin: 0;
     padding: 0;
+    text-decoration: none;
     
 }
 
@@ -11,6 +12,8 @@ body {
     color: #0C120C;
     background-color: #fffaff;
 }
+
+/* header */
 
 #logo {
     font-size: 400%;
@@ -55,4 +58,53 @@ header div a {
 
 .tabs > li > a:hover {
     color: red;
+}
+
+/* body */
+
+#main-image {
+    background: url(../images/business-meeting-to-be-productive.jpg) center center no-repeat;
+    width: 1000px;
+    height: 600px;
+    margin: 2.5% 0 0 5%;
+    border: solid .25px #0C120C;  
+    position: relative;
+    
+}
+
+.main-reason > h2 {
+    font-weight: lighter;
+}
+
+.main-reason {
+    width: 650px;
+    height: 600px;
+    position: absolute;
+    top: 300px;
+    right: 5%; 
+    text-align: center;
+    font-size: 200%;
+}
+
+#main-reason-text {
+    font-size: 22.5px;
+    text-align: justify;
+    line-height: 35px;
+}
+
+/* footer */
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: #0C120C;
+    position: scroll;
+    bottom: 0;    
+}
+
+footer > p {
+    color: #fffaff;
+    text-align: center;
+    margin: 0 25px;
+    line-height: 50px;
 }
