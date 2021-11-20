@@ -23,6 +23,21 @@ body {
     line-height: 200px;
 }
 
+/* element to animate */
+
+.fab {
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* animation */
+
+@keyframes spin {
+    from {transform: rotateZ(0)}
+    to {transform: rotateZ(360deg)}
+}
+
 header div a {
     text-decoration: none;
     color: #0C120C;
