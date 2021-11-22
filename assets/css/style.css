@@ -100,10 +100,19 @@ header div a {
     border: solid .25px #0C120C;
 }
 
-.main-reason > h2 {
+.h2 {
     font-weight: lighter;
     text-align: center;
-    margin-bottom: 2.5%;
+    margin: 2.5% 0;
+}
+
+hr {
+    margin: 2.5% auto;
+}
+
+#contact-hr {
+    margin: 2.5% auto;
+    width: 25%;
 }
 
 .main-reason {
@@ -148,11 +157,25 @@ footer {
     bottom: 0;    
 }
 
-
-
 footer > p {
     color: #fffaff;
     text-align: center;
     margin: 0 25px;
     line-height: 50px;
+}
+
+.contact-info {
+    display: block;
+    text-transform: lowercase;
+    width: 20em;
+    margin: 2% auto;
+    color: #0C120C;
+    position: relative;
+    left: 1.5%;
+    height: 25px;
+    
+}
+
+.contact-info:hover {
+    color: red;
 }
