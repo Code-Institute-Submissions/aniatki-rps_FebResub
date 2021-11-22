@@ -4,8 +4,8 @@
     font-family: Poppins, sans-serif;
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    
+    text-decoration: none;    
+    transition: all 250ms ease-in-out;
 }
 
 body {
@@ -21,11 +21,17 @@ body {
     font-weight: bold;
     text-align: center;
     line-height: 200px;
+    position: relative;
+    top: -20%;
+}
+
+#logo:hover {
+    top: -22.5%;
 }
 
 /* element to animate */
 
-.fab {
+.spin-infinite {
     animation-name: spin;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -36,6 +42,10 @@ body {
 @keyframes spin {
     from {transform: rotateZ(0)}
     to {transform: rotateZ(360deg)}
+}
+
+.active {
+    font-weight: bold;
 }
 
 header div a {
@@ -56,48 +66,53 @@ header div a {
     background-color: #0C120C;
 }
 
-.tabs a, li {
+.tabs {
+    margin-left: 35%;
+
+}
+.tabs li, a {
     margin: 0 25px;
     display: inline;
     text-decoration: none;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    color: white;
+    color: #fffaff;
     line-height: 50px;
-}
-
-.tabs {
-    margin-left: 35%;
-
 }
 
 .tabs > li > a:hover {
     color: red;
+    
 }
 
 /* body */
 
+.main {
+    display: flex;
+    overflow: hidden;
+}
+
 #main-image {
-    background: url(../images/business-meeting-to-be-productive.jpg) center center no-repeat;
-    width: 1000px;
-    height: 600px;
-    margin: 2.5% 0 0 5%;
-    border: solid .25px #0C120C;  
-    position: relative;
-    
+    background: url(../images/business-meeting-to-be-productive.jpg) no-repeat center center;
+    width: 40vw;
+    aspect-ratio: 1.5;
+    margin: 10%;
+    border: solid .25px #0C120C;
 }
 
 .main-reason > h2 {
     font-weight: lighter;
+    text-align: center;
+    margin-bottom: 2.5%;
 }
 
 .main-reason {
-    width: 650px;
-    height: 600px;
-    position: absolute;
-    top: 300px;
-    right: 5%; 
-    text-align: center;
+    width: 40vw;
+    aspect-ratio: 1.5;
+    margin: 10%;
+    position: relative;
+    left: 20%;
+    text-align: justify;
     font-size: 200%;
 }
 
@@ -107,6 +122,22 @@ header div a {
     line-height: 35px;
 }
 
+#socials {
+    width: 275px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 12.5px;
+}
+
+.links {
+    display: inline;
+    color: #0C120C;
+    font-size: 250%;
+}
+
+.links:hover {
+    color: red;
+}
 /* footer */
 
 footer {
@@ -116,6 +147,8 @@ footer {
     position: scroll;
     bottom: 0;    
 }
+
+
 
 footer > p {
     color: #fffaff;
