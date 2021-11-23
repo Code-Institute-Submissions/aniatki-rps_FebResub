@@ -82,28 +82,25 @@ header div a {
 
 .tabs > li > a:hover {
     color: red;
-    
 }
 
 /* body */
 
 .main {
-    display: flex;
-    overflow: hidden;
+    display: block;
 }
 
 #main-image {
     background: url(../images/business-meeting-to-be-productive.jpg) no-repeat center center;
-    width: 40vw;
+    width: 99vw;
     aspect-ratio: 1.5;
-    margin: 10%;
-    border: solid .25px #0C120C;
+    margin: 0 0 0 0;
 }
 
-.h2 {
+.h2-contact {
     font-weight: lighter;
     text-align: center;
-    margin: 2.5% 0;
+    margin: 2.5% auto;
 }
 
 hr {
@@ -115,19 +112,22 @@ hr {
     width: 25%;
 }
 
+.main-reason-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .main-reason {
-    width: 40vw;
+    width: 45vw;
     aspect-ratio: 1.5;
-    margin: 10%;
-    position: relative;
-    left: 20%;
-    text-align: justify;
+    margin: 0 10% 10% 10%;
     font-size: 200%;
 }
 
 #main-reason-text {
     font-size: 22.5px;
-    text-align: justify;
+    text-align: left;
     line-height: 35px;
 }
 
@@ -179,3 +179,4 @@ footer > p {
 .contact-info:hover {
     color: red;
 }
+
