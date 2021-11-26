@@ -3,9 +3,8 @@
 * {
     font-family: Poppins, sans-serif;
     margin: 0;
-    padding: 0;
     text-decoration: none;    
-    transition: all 250ms ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 
 body {
@@ -26,7 +25,9 @@ body {
 }
 
 #logo:hover {
-    top: -22.5%;
+    /* top: -22.5%; */
+    transform: scale(1.025);
+    transition: scale 200ms cubic-bezier(0.32, 0.83, 0.57, 1);
 }
 
 /* element to animate */
@@ -46,9 +47,12 @@ body {
 
 .active {
     font-weight: bold;
-    background-color: #bec2c5;
+    background-color: #fffaff;
     display: flex;
     width: 100%;
+    color: #0C120C;
+    max-width: min-content;
+    padding: 0 10px;
 }
 
 header div a {
@@ -103,13 +107,20 @@ header div a {
     margin: 5% 0;
 }
 
-hr {
+#hr-home {
     margin: 2.5% auto;
 }
 
 #contact-hr {
-    margin: 2.5% auto;
-    width: 25%;
+    width: 20em;
+    filter: blur(.5px);
+}
+
+.h2-contact {
+    display: flex;
+    justify-content: center;
+    margin: 1.75% 0;
+    font-size: 1.5em;
 }
 
 .main-reason-container {
@@ -163,16 +174,26 @@ footer > p {
     line-height: 50px;
 }
 
+.contact-info-container {
+    margin-bottom: 2.5%;
+}
+
+.contact-info-container,
 .contact-info {
-    display: block;
-    text-transform: lowercase;
-    width: 20em;
-    margin: 2% auto;
-    color: #0C120C;
-    position: relative;
-    left: 1.5%;
-    height: 25px;
+    padding: 0 10%;
     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info {
+    text-transform: lowercase;
+    color: #0C120C;   
+    font-size: 1.25em;
+    height: 2.5em;
+    display: inline;
 }
 
 .contact-info:hover {
