@@ -46,6 +46,9 @@ body {
 
 .active {
     font-weight: bold;
+    background-color: #bec2c5;
+    display: flex;
+    width: 100%;
 }
 
 header div a {
@@ -64,14 +67,17 @@ header div a {
     height: 50px;
     width: 100%;
     background-color: #0C120C;
+    
 }
 
 .tabs {
-    margin-left: 35%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 
 }
 .tabs li, a {
-    margin: 0 25px;
+    margin: 0 2.5%;
     display: inline;
     text-decoration: none;
     letter-spacing: 2.5px;
@@ -93,14 +99,8 @@ header div a {
 #main-image {
     background: url(../images/business-meeting-to-be-productive.jpg) no-repeat center center;
     width: 99vw;
-    aspect-ratio: 1.5;
-    margin: 0 0 0 0;
-}
-
-.h2-contact {
-    font-weight: lighter;
-    text-align: center;
-    margin: 2.5% auto;
+    height: 35em;
+    margin: 5% 0;
 }
 
 hr {
@@ -119,27 +119,26 @@ hr {
 }
 
 .main-reason {
-    width: 45vw;
-    aspect-ratio: 1.5;
-    margin: 0 10% 10% 10%;
-    font-size: 200%;
+    width: 75vw;
+    height: 100%;
+    margin: 0 0 10% 0;
+    
 }
 
 #main-reason-text {
     font-size: 22.5px;
     text-align: left;
-    line-height: 35px;
+    line-height: 32.5px;
 }
 
 #socials {
-    width: 275px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     position: relative;
-    bottom: 12.5px;
+    bottom: 15px;
 }
 
 .links {
-    display: inline;
     color: #0C120C;
     font-size: 250%;
 }
@@ -178,5 +177,54 @@ footer > p {
 
 .contact-info:hover {
     color: red;
+}
+
+.services {
+    display: flex;
+    margin: 5%;
+    justify-content: center;
+    position: relative;    
+}
+
+.service-left,
+.service-right {
+    width: 30em;
+    height: 30em;
+    position: relative;
+}
+
+.service-left {
+        background: url('../images/Hays_Tech_General\ no\ BG\ 1000px.png') no-repeat center center;
+    margin-right: 2.5%;
+}    
+
+.service-right {
+    background: url('../images/Healthcare_Employee_Training_Blog.png') ;
+    margin-left: 2.5%;
+}
+
+
+.service-title {
+    color: #fffaff;
+    background: #0C120C;
+    
+    position: absolute;
+    bottom: 2.565em;
+    
+    padding-left: 5%;
+    max-width: max-content;
+    
+    transform: scale(125%) translateX(25px);
+}
+
+.service-title::after {
+    content: '';
+    height: 5px;
+    background: linear-gradient(90deg, magenta, red);
+    display: block;
+    position: relative;
+    top: 10px;
+    filter: blur(5px);
+    z-index: -1;
 }
 
