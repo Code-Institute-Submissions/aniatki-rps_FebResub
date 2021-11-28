@@ -15,13 +15,10 @@ body {
 /* header */
 
 #logo {
-    font-size: 400%;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    line-height: 200px;
-    position: relative;
-    top: -20%;
+    line-height: 110px;
 }
 
 #logo:hover {
@@ -63,8 +60,6 @@ header div a {
 #header-outer {
     height: 200px;
     width: 100%;
-    padding: 0;
-    margin: 0;
 }
 
 #tabs-wrapper {
@@ -102,9 +97,9 @@ header div a {
 
 #main-image {
     background: url(../images/business-meeting-to-be-productive.jpg) no-repeat center center;
-    width: 99vw;
-    height: 35em;
-    margin: 5% 0;
+    width: 90vw;
+    height:663px;
+    margin: 5% 5%;
 }
 
 #hr-home {
@@ -133,6 +128,7 @@ header div a {
     width: 75vw;
     height: 100%;
     margin: 0 0 10% 0;
+    position: relative;
     
 }
 
@@ -175,7 +171,10 @@ footer > p {
 }
 
 .contact-info-container {
+    background: url(../images/Dollarphotoclub_66688809-1-1024x664.jpg) no-repeat center center;
+    background-blend-mode: normal;
     margin-bottom: 2.5%;
+    opacity: .3;
 }
 
 .contact-info-container,
@@ -190,7 +189,8 @@ footer > p {
 
 .contact-info {
     text-transform: lowercase;
-    color: #0C120C;   
+    color: #fffaff;
+    mix-blend-mode:overlay;   
     font-size: 1.25em;
     height: 2.5em;
     display: inline;
@@ -215,37 +215,55 @@ footer > p {
 }
 
 .service-left {
-        background: url('../images/Hays_Tech_General\ no\ BG\ 1000px.png') no-repeat center center;
-    margin-right: 2.5%;
+    background: url('../images/service-left.jpg') no-repeat center center;
+    /* margin-right: 2.5%; */
 }    
 
 .service-right {
-    background: url('../images/Healthcare_Employee_Training_Blog.png') ;
-    margin-left: 2.5%;
+    background: url('../images/service-right.jpg') no-repeat center center;
+    /* margin-left: 2.5%; */
 }
 
 
 .service-title {
     color: #fffaff;
     background: #0C120C;
-    
     position: absolute;
-    bottom: 2.565em;
-    
+    bottom: 0;
     padding-left: 5%;
     max-width: max-content;
-    
-    transform: scale(125%) translateX(25px);
 }
 
 .service-title::after {
     content: '';
     height: 5px;
-    background: linear-gradient(90deg, magenta, red);
+    background: linear-gradient(
+        90deg,
+        magenta,
+        cyan
+        );
     display: block;
     position: relative;
     top: 10px;
-    filter: blur(5px);
-    z-index: -1;
+    /* filter: blur(2.5px); */
 }
 
+@media screen and (max-width: 650px){
+    #logo {
+        font-size: 180%;
+        line-height: normal;
+        position: relative;
+        top: -20px;
+    }
+
+    #main-image {
+        width: 100%;
+        height: 431px;
+        background: url(../images/hero-small.jpg) no-repeat center center;
+        margin: 0 0 5% 0;
+    }
+
+    #header-outer {
+        height: 100px;
+    }
+}
