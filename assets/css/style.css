@@ -163,6 +163,8 @@ header div a {
 .links:focus {
     color: red;
 }
+
+
 /* footer */
 
 footer {
@@ -181,29 +183,30 @@ footer > p {
 }
 
 .contact-info-container {
-    background: url(../images/Dollarphotoclub_66688809-1-1024x664.jpg) no-repeat center center;
-    background-blend-mode: normal;
+    background: linear-gradient(180deg, #fffaff, #e9e9e9, #e9dbdb, #fffaff);
     margin-bottom: 2.5%;
-    opacity: .3;
+    position: relative;
 }
 
 .contact-info-container,
 .contact-info {
-    padding: 0 10%;
-    
+    padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    
 }
 
 .contact-info {
     text-transform: lowercase;
-    color: #fffaff;
-    mix-blend-mode:overlay;   
-    font-size: 1.25em;
+    color: #0C120C;
+    font-size: 1.125em;
     height: 2.5em;
     display: inline;
+    box-shadow: 0 20px 10px rgba(255, 255, 255, .3);
+    position: relative;
+    max-width: max-content;
+    left: 35%;
 }
 
 .contact-info:hover,
@@ -240,7 +243,7 @@ footer > p {
 
 .service-title {
     color: #fffaff;
-    background: #0C120C;
+    background: linear-gradient(90deg, purple, darkblue);
     position: absolute;
     bottom: 0;
     padding-left: 5%;
@@ -303,5 +306,16 @@ footer > p {
         width: 100%;
         height: auto;
         /* background: red; */
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #logo {
+        font-size: 140%;
+    }
+
+    .services {
+        transform: scale(0.7);
+        margin: auto auto;
     }
 }
