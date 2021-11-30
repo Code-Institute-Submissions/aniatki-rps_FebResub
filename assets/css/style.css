@@ -99,7 +99,7 @@ header div a {
 
 #main-image {
     background: url(../images/business-meeting-to-be-productive.jpg) no-repeat center center;
-    width: 90%;
+    max-width: 100%;
     height: 600px;
     margin: 5% auto;
     object-fit: cover;
@@ -216,9 +216,19 @@ footer > p {
 
 .services {
     display: flex;
-    margin: 5%;
     justify-content: center;
-    position: relative;    
+    align-items: center;
+}
+
+.services-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0;
 }
 
 .service-left,
@@ -237,13 +247,12 @@ footer > p {
 .service-right {
     background: url('../images/service-right.jpg') no-repeat center center;
     margin-left: 2.5%;
-    box-shadow: 0 0 5px;
 }
 
 
 .service-title {
     color: #fffaff;
-    background: linear-gradient(90deg, purple, darkblue);
+    background: linear-gradient(90deg, rgb(70, 0, 70), rgb(0, 0, 82));
     position: absolute;
     bottom: 0;
     padding-left: 5%;
@@ -255,13 +264,12 @@ footer > p {
     height: 5px;
     background: linear-gradient(
         90deg,
-        magenta,
-        cyan
+        rgb(202, 202, 202),
+        rgb(41, 0, 107)
         );
     display: block;
     position: relative;
     top: 10px;
-    /* filter: blur(2.5px); */
 }
 
 @media screen and (max-width: 1130px) {
@@ -279,43 +287,36 @@ footer > p {
     }
 
     #main-image {
-        width: 100%;
-        height: 431px;
         background: url(../images/hero-small.jpg) no-repeat center center;
         margin: 0 0 5% 0;
-        
     }
 
     #header-outer {
         height: 100px;
     }
 
-    .services {
-        flex-direction: column;
-        transform: scale(.80);
-    }
-
-    .service-left {
-        margin: -20% auto 2.5% auto;
-    }
-    .service-right {
-        margin: 7.5% auto 2.5% auto;
-    }
-
     .services-wrapper {
-        width: 100%;
-        height: auto;
-        /* background: red; */
+        flex-direction: column;
+        padding: 0;
+        margin: 0 0 5 0;
+        box-sizing: border-box;
+    }
+    .service-left,
+    .service-right {
+        max-width: 100%;
+        position: relative;
+        left: .125em;
+        margin-bottom: 10%;
     }
 }
 
-@media screen and (max-width: 460px) {
+@media (max-width: 460px) {
     #logo {
-        font-size: 140%;
+        font-size: 150%;
     }
 
-    .services {
-        transform: scale(0.7);
-        margin: auto auto;
+    .tabs {
+        padding: 0;
+        font-size: 90%;
     }
 }
