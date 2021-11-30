@@ -28,13 +28,29 @@ And of course in the end we have our social links which are also centered and so
 
 ### Services Page
 
-Keeping things simple with our services page, there is a lot of information to be put out there regarding the services this company provides, but what better way is there than to encourage our clients for a one on one explanation of their needs?
+Keeping things simple, there is a lot of information to be put out there regarding the services this company provides, but what better way is there than to encourage our clients for a one-on-one explanation of their needs?
 
 ### Contact Page
 
 Contact info on this page is made interactive by linking the e-mail and phone numbers so they're one click/tap away from getting in touch without needing to copy and paste around.
 
 
-# TECHNOLOGIES USED
 
-## HTML
+## My thoughts on this project
+
+The idea for this project originated from my good friend who runs her own GDPR oriented and service providing company. The main goal of the website is to attract new clients by giving them the best knowledge in this field by very high standards.
+
+I started very plain and simple: _pen and paper_.
+
+First, i sketched the home page. The original sketch was somehow different than the version there is on the website now, but the core elements are there.
+From then on i had the idea in my head and went straight over on gitpod to start my HTML. 
+
+And then for the fun part (and frustrating at times), __CSS__.
+
+While there were a lot of new concepts I learned from the course, there were a ton more I learned from the CSS god [Kevin Powell](https://www.youtube.com/kepowob). I relied on that for most of the issues i was having with layout and picked up a few animations tricks along the way, which make the website look good on load. 
+
+The biggest concern i had was making it mobile friendly and flex-box takes good care of that for different elements.
+
+I really enjoyed the CSS part because you can do so much with it.
+
+___
