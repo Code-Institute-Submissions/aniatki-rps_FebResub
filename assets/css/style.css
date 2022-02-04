@@ -291,7 +291,38 @@ footer > p {
 .disclaimer-contact-page {
     color: rgb(44, 57, 131);
     line-height: normal;
-    word-spacing:0%;
+    word-spacing: 0;
+}
+
+details {
+    user-select: none;
+}
+
+summary {
+    cursor: pointer;
+    padding: .5rem 1rem;
+    background: white;
+    font-size: 1.25rem;
+}
+
+.white-bg {
+    position: relative;
+    background: rgba(255 255 255 / .9);
+    font-size: 1.25rem;
+    padding: 0 1rem;
+    color: black;
+    line-height: 1.45;
+    z-index: 10;
+    text-shadow: 0 0 5px white;
+}
+
+details > .white-bg {
+    transform: scale(0);
+    transition: scale 200ms ease-in-out;
+}
+
+details[open] > .white-bg {
+    transform: scale(1);
 }
 
 @media screen and (max-width: 1130px) {
