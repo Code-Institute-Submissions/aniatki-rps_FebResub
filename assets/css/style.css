@@ -226,11 +226,16 @@ footer > p {
 }
 
 button[type="submit"] {
+    cursor: pointer;
     padding: 1em;
     border-radius: 50vw;
     background: red;
     margin-top: 1rem;
     color: white;
+}
+
+button[type="submit"]:hover {
+    background: rgb(235, 0, 0);
 }
 
 .contact-info:hover,
