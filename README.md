@@ -49,7 +49,7 @@ The one thing that wasn't resolved was the footer bar not always sitting at the 
 
 The site was deployed to GitHub pages. It was very easy to do and from the time of deployment to the live view of the site didn't take long at all.
 
-Here is the live link: https://aniatki.github.io/rps2
+Here is the live link: https://aniatki.github.io/rps
 
 # Credits
 

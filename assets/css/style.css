@@ -6,7 +6,6 @@
     text-decoration: none;    
     transition: all 150ms ease-in-out;
     box-sizing: border-box;
-
 }
 
 body {
@@ -22,7 +21,6 @@ body {
     text-align: center;
     line-height: 110px;
     font-size: 2.5em;
-    
 }
 
 #header-outer a h1:hover {
@@ -69,7 +67,6 @@ header div a {
     height: 50px;
     width: 100%;
     background-color: #0C120C;
-    
 }
 
 .tabs {
@@ -128,7 +125,6 @@ header div a {
     height: 100%;
     margin: 0 0 10% 0;
     position: relative;
-    
 }
 
 #main-reason-text {
